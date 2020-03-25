@@ -32,6 +32,6 @@ if(consumo > 0 and valor > 167):
     valor = valor + (consumo * 5)
     print(valor)
 
-if(consumo > 0 and consumo < 30 ):
-    valor = valor + (consumo * 2)    
+if(consumo > 0 and valor > 7):
+    valor = valor + (consumo * 2)
     print(valor)
