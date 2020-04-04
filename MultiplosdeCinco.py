@@ -5,8 +5,8 @@ m = int(valores[1]) #fim
 while(n <= m):
     if(n % 5 == 0):
         if(n < m):
-            print(n, '|', end="")
+            print('{}|'.format(n), end="")
         else:
-            print(n, end="")
+            print('{}'.format(n), end="")
     n = n + 1
 
