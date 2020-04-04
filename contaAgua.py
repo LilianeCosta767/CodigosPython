@@ -1,37 +1,17 @@
 consumo = int(input())
 
-valor = 7 #valor da taxa
+valor = 0 #valor da taxa
 
+if(consumo > 100):
+    valor = valor + ((consumo - 100) * 5)
+    consumo = consumo - (consumo - 100)
+if(consumo > 30 and consumo <= 100):
+    valor = valor + ((consumo - 30) * 2)
+    consumo = consumo - (consumo - 30)
+if(consumo > 10 and consumo <= 30):
+    valor = valor + ((consumo - 10) * 1)
+    consumo = consumo - (consumo - 10)
 if(consumo <= 10):
-    print(valor)
-    #break
-elif(consumo > 10):
-    
-    if(consumo >= 20): #20 por causa do intervalo 10-30
-        consumo = consumo - 30 #menos 20 desse intervalo e menos 10 da taxa q ja foi inicializada
-        valor = valor + (20 * 1)
-        print('teste, valor = {}'.format(valor))
-        if(consumo == 0):
-            print(valor)
-    else:
-        valor = valor + ((consumo - 10) * 1)
-        print(valor)
-        #break
-if(consumo > 30):
-    
-    if(consumo >= 70): #70 por causa do intervalo 30-100
-        consumo = consumo - 70
-        valor = valor + (2 * 70)
-        if(consumo == 0):
-            print(valor)
-    else:
-        valor = valor + ((consumo - 10) * 2)
-        print(valor)
-        #break
-if(consumo > 0 and valor > 167):
-    valor = valor + (consumo * 5)
-    print(valor)
+    valor = valor + 7
 
-if(consumo > 0 and valor > 7):
-    valor = valor + (consumo * 2)
-    print(valor)
+print(valor)
