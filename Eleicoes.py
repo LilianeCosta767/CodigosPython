@@ -2,7 +2,7 @@ num_voto = 0
 alibaba = 0
 alcapone = 0
 branco = 0
-nulo = 0
+null = 0
 votos_validos = 0
 percent_alibaba = 0
 percent_alcapone = 0
@@ -17,7 +17,7 @@ while(num_voto != -1):
         elif(num_voto == 0):
             branco = branco + 1 #calculo de z
         else:
-            nulo = nulo + 1 #calculo de w
+            null = null + 1 #calculo de w
     else: #num_voto == 0
         continue
 
@@ -31,7 +31,7 @@ print(alcapone)
 print(branco)
 
 #impressão de w
-print(nulo)
+print(null)
 
 #impressao do candidato vencedor = k
 if(alibaba > alcapone):
