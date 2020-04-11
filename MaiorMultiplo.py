@@ -1,7 +1,7 @@
 M = int(input())
 N = int(input())
 
-inicio = M
+inicio = M #ponto de partida
 maior_multiplo = 0
 
 while(inicio <= N):
