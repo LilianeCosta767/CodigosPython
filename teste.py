@@ -1,9 +1,9 @@
-altura_amp = 5
-largura_amp = 2
+import random
 
-matriz_ampulheta = [[] * altura_amp, [] * largura_amp]
-
-for ind_linha in range(altura_amp):
-    for ind_coluna in range(largura_amp):
-        print(matriz_ampulheta[ind_linha][ind_coluna], end = ' ')
-    print()
+a1 = input('Nome do aluno 1: ')
+a2 = input('Nome do aluno 2: ')
+a3 = input('Nome do aluno 3: ')
+a4 = input('Nome do aluno 4: ')
+lista = [a1, a2, a3, a4]
+seq = random.sample(lista, 4)
+print('A ordem sorteada foi: ', seq)
