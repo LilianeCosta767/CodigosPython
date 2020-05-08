@@ -1,3 +1,5 @@
-valor = [0 * 3]
+N = 4
+print('teste')
 
-print(valor)
+for i in range(4, 0, -1):
+    print(i)

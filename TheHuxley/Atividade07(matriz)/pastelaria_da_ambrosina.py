@@ -6,7 +6,6 @@ soma = 0
 
 # resolução do problema
 for l in range(4): #percorre as linhas
-    #for i in range(4): #leitura da linha como um input
     aux = input().split()
     for c in range(4): #atribuição da linha informada na linha correspondente da matriz
         matriz[l][c] = float(aux[c])
