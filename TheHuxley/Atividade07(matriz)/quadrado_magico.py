@@ -3,7 +3,6 @@ N = 0
 aux = 0
 soma = 0
 soma_base = 0
-vetor_aux = []
 
 # resolução do problema
 print('Digite a dimensao da matriz quadrada N x N:')
